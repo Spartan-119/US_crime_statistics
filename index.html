@@ -35,6 +35,15 @@
             margin-bottom: 20px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
+
+        .github-logo {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png');
+            background-size: cover;
+            margin-right: 5px;
+        }
     </style>
 </head>
 
@@ -55,9 +64,13 @@
             <button class="btn btn-primary" onclick="redirectTo('page9.html')">Q8. How do crime rates vary based on the day of the week?</button>
             <button class="btn btn-primary" onclick="redirectTo('page10.html')">Q9. What is the average response time of law enforcement (from dispatch to arrival) for reported crimes?</button>
             <button class="btn btn-primary" onclick="redirectTo('page11.html')">Q10. How do crime rates differ between weekdays and weekends, and is there a variation in the types of crimes reported?</button>
+            <button class="btn btn-primary" onclick="redirectTo('page12.html')">[BONUS QUESTION] Q11. How long do crimes typically last (from start to end time)?</button>
         </div>
+        <a class="btn btn-success" href="https://github.com/Spartan-119/US_crime_statistics">
+            <span class="github-logo"></span>
+            Click here to view the GitHub Repository containing the Jupyter notebook.
+        </a>
     </div>
-
     <script>
         function redirectTo(page) {
             window.location.href = page;
